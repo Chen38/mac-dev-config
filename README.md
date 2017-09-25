@@ -26,7 +26,14 @@ brew upgrade
 brew cleanup
 
 # Install packages
-brew install ccat git mysql zsh nginx zsh-completions node@6 thefuck diff-so-fancy nvm tmux autojump macvim ruby wget catimg mongodb
+brew install ccat git mysql zsh nginx zsh-completions node@6 thefuck diff-so-fancy nvm tmux autojump ruby wget catimg mongodb
+```
+
+### Use brew cask to install macOS applications
+
+```bash
+# Get Homebrew-Cask
+brew tap caskroom/cask
 ```
 
 ### Use NVM to manage node.js
@@ -78,7 +85,7 @@ git config --global credential help.store
 - [Sublime Text][1]
 - [Visual Studio Code][2]
 - [Google Chrome][3]
-- [iTerm][4]
+- [iTerm2][4]
 - [Postman][5]
 - [Alfred][6]
 - [Github Desktop][7]
