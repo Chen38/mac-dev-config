@@ -1,4 +1,4 @@
-## Mac Development Environment Config
+## macOS Development Environment Config
 
 I am a Frontend Developer and I use the MacBook Pro as my development computer.
 
@@ -89,9 +89,9 @@ git config --global credential help.store
 - [Postman][5]
 - [Alfred][6]
 - [Github Desktop][7]
-- [PhotoShop CC][8]
+- [Photoshop CC][8]
 
-<!-- Urls -->
+<!-- URLs -->
 
 [1]: https://www.sublimetext.com/
 [2]: https://code.visualstudio.com/
