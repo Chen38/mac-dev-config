@@ -116,7 +116,7 @@ export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # NodeJS
-export PATH="/usr/local/opt/node@6/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 # export PS1="\u@MacbookPro:\w\$ "
 
