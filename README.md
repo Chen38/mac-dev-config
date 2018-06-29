@@ -172,6 +172,9 @@ An acient editor and exists as a legend, I can use it a little. Just see the det
 ```bash
 # Cancel the delay after hover to the edge of dock side
 defaults write com.apple.dock autohide-delay -float 0; killall Dock
+
+# Disable chrome two-finger back/forward navigation
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
 ```
 
 <!-- URLs -->
