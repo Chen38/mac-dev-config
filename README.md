@@ -153,10 +153,11 @@ As we all know, it is a popular code version control tool. When I install it, my
 ```bash
 # Config global user
 git config --global user.name "Barry Chen"
-git config --global user.email "funnychen38@gmail.com"
+git config --global user.email "funnychen@outlook.com"
 
 # Store password when pull and push
-git config --global credential help.store
+# See https://git-scm.com/docs/git-credential-store
+git config credential help.store
 ```
 
 ### Nginx
