@@ -51,7 +51,7 @@ DEFAULT_USER="Barry"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git catimg autojump)
+plugins=(git)
 
 # User configuration
 
@@ -91,36 +91,11 @@ source $ZSH/oh-my-zsh.sh
 # export TTC_UPDATE_INTERVAL=30
 # tiny-care-terminal configuration end
 
-# self define alias start
-alias fpm.start='php-fpm -D'
-alias fpm.stop='kill -INT `cat /usr/local/var/run/php-fpm.pid`'
-alias fpm.restart='kill -USR2 `cat /usr/local/var/run/php-fpm.pid`'
-alias fpm.status='lsof -Pni4 | grep LISTEN | grep php-fpm'
-alias fs="font-spider"
-alias hs="http-server"
-alias docker.con="docker exec -it --user=laradock laradock_workspace_1 bash"
-# alias vim="/usr/local/Cellar/macvim/8.0-133/MacVim.app/Contents/MacOS/Vim"
-# alias tct="tiny-care-terminal"
-alias gdsf="gd --color | diff-so-fancy"
-eval "$(thefuck --alias)"
-# self define alias end
+# Alias start
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-# MySQL
-export PATH="$PATH:/usr/local/mysql/bin"
+# Alias end
 
 # Normal
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# NodeJS
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-
-# export PS1="\u@MacbookPro:\w\$ "
-
-# export PROMPT='${ret_status}%n@MacbookPro %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 export PROMPT='${ret_status}%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
-
-# . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh

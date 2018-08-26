@@ -9,9 +9,6 @@ call vundle#begin()
 "
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tomasr/molokai'
-Plugin 'joshdick/onedark.vim'
-Plugin 'Lokaltog/vim-powerline'
 Plugin 'kien/ctrlp.vim'
 " Plugin 'Valloric/YouCompleteMe'
 " The following are examples of different formats supported.
