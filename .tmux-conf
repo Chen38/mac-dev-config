@@ -9,6 +9,9 @@ unbind C-b
 set-option -g prefix C-a
 bind-key C-a send-prefix
 
+# Bind clear history
+bind C-k send-keys -R \; clear-history
+
 # Enable mouse control
 # set -g mouse-select-window on
 # set -g mouse-select-pane on
@@ -26,14 +29,14 @@ set -g status-bg default
 set -g status-fg cyan
 
 # Left side of status bar
-set -g status-left-bg default
-set -g status-left-fg green
+set -g status-left-style "bg=default"
+set -ag status-left-style "fg=green"
 set -g status-left-length 60
 set -g status-left "#S #[fg=white]» #[fg=yellow]#I  #[fg=cyan]#P"
 
 # Right side of status bar
-set -g status-right-bg default
-set -g status-right-fg cyan
+set -g status-right-style "bg=default"
+set -ag status-right-style "fg=green"
 set -g status-right-length 60
 set -g status-right "#H #[fg=white]« #[fg=yellow]%H:%M:%S #[fg=green]%d-%b-%y"
 
@@ -42,12 +45,12 @@ set -g window-status-format " #I:#W#F "
 set -g window-status-current-format " #I:#W#F "
 
 # Current window status
-set -g window-status-current-bg red
-set -g window-status-current-fg black
+set -g window-status-current-style "bg=red"
+set -ag window-status-current-style "fg=black"
 
 # Window with activity status
-set -g window-status-activity-bg yellow # fg and bg are flipped here due to a
-set -g window-status-activity-fg black  # bug in tmux
+set -g window-status-activity-style "bg=yellow"
+set -ag window-status-activity-style "fg=black"
 
 # Window separator
 set -g window-status-separator ""
@@ -56,12 +59,12 @@ set -g window-status-separator ""
 set -g status-justify centre
 
 # Pane border
-set -g pane-border-bg default
-set -g pane-border-fg default
+set -g pane-border-style "bg=default"
+set -ag pane-border-style "fg=default"
 
 # Active pane border
-set -g pane-active-border-bg default
-set -g pane-active-border-fg green
+set -g pane-active-border-style "bg=default"
+set -ag pane-active-border-style "fg=green"
 
 # Pane number indicator
 set -g display-panes-colour default
@@ -72,18 +75,18 @@ set -g clock-mode-colour red
 set -g clock-mode-style 12
 
 # Message
-set -g message-bg default
-set -g message-fg default
+set -g message-style "bg=default"
+set -ag message-style "fg=default"
 
 # Command message
-set -g message-command-bg default
-set -g message-command-fg default
+set -g message-command-style "bg=default"
+set -ag message-command-style "fg=default"
 
 # Mode
-set -g mode-bg red
-set -g mode-fg default
+set -g mode-style "bg=#2F90F5"
+set -ag mode-style "fg=default"
 
-# plugins
+# Plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-resurrect'
