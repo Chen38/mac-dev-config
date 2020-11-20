@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/barry/.oh-my-zsh
+export ZSH=/Users/barrychen/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -7,8 +7,8 @@ export ZSH=/Users/barry/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
-# ZSH_THEME="af-magic"
-DEFAULT_USER="Barry"
+# ZSH_THEME="muse"
+DEFAULT_USER="Barry Chen"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -91,11 +91,44 @@ source $ZSH/oh-my-zsh.sh
 # export TTC_UPDATE_INTERVAL=30
 # tiny-care-terminal configuration end
 
-# Alias start
+# self define alias start
+alias hs="http-server"
+alias gdsf="gd --color | diff-so-fancy"
+alias brew.daily='brew doctor && brew update && brew upgrade && brew cleanup'
+alias git.changelog='git chlog'
+alias docker.start='docker-machine start default && eval $(docker-machine env)'
+alias docker.stop='docker-machine stop default'
+# self define alias end
 
-# Alias end
+# nvm
+# export NVM_DIR="$HOME/.nvm"
+# . "/usr/local/opt/nvm/nvm.sh"
+
+# MySQL
+# export PATH="$PATH:/usr/local/mysql/bin"
 
 # Normal
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
+# NodeJS
+export PATH="/usr/local/opt/node@12/bin:$PATH"
+
+# export PS1="\u@MacbookPro:\w\$ "
+
+# Lang
+export LANG=en_US.UTF-8
+
+# export PROMPT='${ret_status}%n@MacbookPro %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 export PROMPT='${ret_status}%{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+
+# . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# Yarn path setup
+export PATH="$PATH:/usr/local/opt/yarn/bin"
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# z command
+# . $HOME/Sites/github/z/z.sh
+export TERM=xterm-256color
