@@ -26,8 +26,8 @@ bind r source-file ~/.tmux.conf
 set -g status-interval 1
 
 # Basic status bar colors
-set -g status-bg default
-set -g status-fg cyan
+set -g status-style bg=default
+set -g status-style fg=cyan
 
 # Left side of status bar
 set -g status-left-style "bg=default"
